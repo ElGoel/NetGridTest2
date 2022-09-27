@@ -2,15 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { MoviesComponent } from './movies/movies.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PruebaComponent } from './prueba/prueba.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MoviesComponent
+    PruebaComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
